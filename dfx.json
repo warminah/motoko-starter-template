@@ -1,1 +1,31 @@
 
+{
+  "version": 0.23.0,
+  "canisters": {
+    "main": {
+      "type": "motoko",
+      "sources": [
+        [
+          "src/backend/main.mo",
+          "src/backend/types.mo"
+        ]
+      ]
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "local"
+    },
+    "ic": {
+      "type": "ic"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packaging": {
+        "type": "zip"
+      }
+    }
+  }
+}
